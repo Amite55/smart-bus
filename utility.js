@@ -87,11 +87,3 @@ applyBtn.addEventListener('click', function(){
 })
 
 
-// document.getElementById('input-field').addEventListener('keyup', function(e){
-
-//     const text =e.target.value;
-//     const applyBtn = document.getElementById('apply-btn');
-//     if(text === 'NEW15'){
-
-//     }
-// })
