@@ -32,6 +32,8 @@ for(let index = 0; index < seatAll.length; index++){
             alert('please 4 ticket purses')
             return;
         }
+        
+        event.currentTarget.disabled=true;
        
         // seat left 
         const seatLeft = document.getElementById('seat-left').innerText;
@@ -74,6 +76,6 @@ applyBtn.addEventListener('click', function(){
          grandElement.innerText= grandTotalAmount;
     }
     else{
-        alert('Invalid coupon')
+        alert('Invalid coupon');
     }
 })

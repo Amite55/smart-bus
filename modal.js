@@ -1,10 +1,26 @@
 function startModal(){
-    const mainSection = document.getElementById('main-section');
-    mainSection.classList.add('hidden')
 
-    // show modal
-    const showModal = document.getElementById('show-modal');
-    showModal.classList.remove('hidden')
+    const inputNumber = document.getElementById('input-number').value;
+    console.log(inputNumber)
+    if(setNumber >= 2 && !isNaN(inputNumber)){
+        const mainSection = document.getElementById('main-section');
+        mainSection.classList.add('hidden')
+    
+        // show modal
+        const showModal = document.getElementById('show-modal');
+        showModal.classList.remove('hidden')
+    }
+    else{
+        alert('please select your seat!!!')
+    }
+
+
+    // const mainSection = document.getElementById('main-section');
+    // mainSection.classList.add('hidden')
+
+    // // show modal
+    // const showModal = document.getElementById('show-modal');
+    // showModal.classList.remove('hidden')
 }
 function continu(){
     const mainSection = document.getElementById('main-section');
