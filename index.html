@@ -329,7 +329,7 @@
 
                 <div  class="join ">
                     <input class="input border-cyan-400  join-item rounded-md text-center" type="text" name="" id="input-field" placeholder="Have Any Coupon?">
-                    <button id="apply-btn" class="btn bg-[#1DD100] join-item text-white">Apply</button>
+                    <button id="apply-btn" disabled class="btn bg-[#1DD100] join-item text-white">Apply</button>
                 </div>
                 <div class="flex justify-between px-5">
                     <p>Grand Total</p>
@@ -343,7 +343,7 @@
                     <h3>Email ID</h3>
                     <input class="w-full h-9 p-2 rounded-md" type="email" name="" id="" placeholder="Enter your email id">
                    <br>
-                    <button onclick="startModal()"  id="" class="w-full btn bg-[#1DD100] text-white">Next</button>
+                    <button onclick="startModal()" disabled  id="next-btn" class="w-full btn bg-[#1DD100] text-white">Next</button>
                     <div class="flex justify-between px-9">
                         <a href="#">Terms and Conditions</a>
                         <a href="#">Cancellation Policy</a>
@@ -361,7 +361,8 @@
 
     <!-- footer section start hare --------------->
 
-    <footer class="footer justify-between p-10 bg-neutral text-neutral-content">
+  <section id="footer">
+    <footer  class="footer justify-between p-10 bg-neutral text-neutral-content">
         <aside>
 
           <p>ocado group<br>Providing reliable tech since 2024</p>
@@ -379,7 +380,7 @@
           </div>
         </nav>
       </footer>
-<hr>
+
       <footer class=" my-11 lg:flex justify-between">
         <p> &copy; all rights reserved, ocado group services limited.2024</p>
         <div class="flex gap-5">
@@ -388,6 +389,7 @@
             <small>Privacy policy</small>
         </div>
       </footer>
+  </section>
 
     <!-- =============footer section ends hare -->
 

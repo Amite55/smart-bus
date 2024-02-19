@@ -28,12 +28,17 @@ for(let index = 0; index < seatAll.length; index++){
         setSeatNumber.innerText=setNumber;
         setNumber++;
 
+        const nextBtn = document.getElementById('next-btn');
         if(setNumber > 5){
             alert('please 4 ticket purses')
             return;
         }
+        else if(setNumber >= 1){
+            applyBtn.removeAttribute('disabled');
+            nextBtn.removeAttribute('disabled');
+        }
         
-        event.currentTarget.disabled=true;
+        
        
         // seat left 
         const seatLeft = document.getElementById('seat-left').innerText;
@@ -47,7 +52,7 @@ for(let index = 0; index < seatAll.length; index++){
         total.innerText=setTotalAmount;
         // console.log(setTotalAmount);
 
-
+        event.currentTarget.disabled=true;
     })
 }
 
@@ -75,7 +80,18 @@ applyBtn.addEventListener('click', function(){
          const grandTotalAmount = setTotalAmount - discountAmountNew;
          grandElement.innerText= grandTotalAmount;
     }
+ 
     else{
         alert('Invalid coupon');
     }
 })
+
+
+// document.getElementById('input-field').addEventListener('keyup', function(e){
+
+//     const text =e.target.value;
+//     const applyBtn = document.getElementById('apply-btn');
+//     if(text === 'NEW15'){
+
+//     }
+// })
